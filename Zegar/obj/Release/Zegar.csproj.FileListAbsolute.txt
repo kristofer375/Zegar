@@ -1,0 +1,17 @@
+C:\Users\Krzysztof\source\repos\Zegar\Zegar\bin\Release\Zegar.exe.config
+C:\Users\Krzysztof\source\repos\Zegar\Zegar\bin\Release\Zegar.exe
+C:\Users\Krzysztof\source\repos\Zegar\Zegar\bin\Release\Zegar.pdb
+C:\Users\Krzysztof\source\repos\Zegar\Zegar\obj\Release\Zegar.csprojAssemblyReference.cache
+C:\Users\Krzysztof\source\repos\Zegar\Zegar\obj\Release\MainWindow.g.cs
+C:\Users\Krzysztof\source\repos\Zegar\Zegar\obj\Release\Ustawienia.g.cs
+C:\Users\Krzysztof\source\repos\Zegar\Zegar\obj\Release\App.g.cs
+C:\Users\Krzysztof\source\repos\Zegar\Zegar\obj\Release\Zegar_MarkupCompile.cache
+C:\Users\Krzysztof\source\repos\Zegar\Zegar\obj\Release\Zegar_MarkupCompile.lref
+C:\Users\Krzysztof\source\repos\Zegar\Zegar\obj\Release\MainWindow.baml
+C:\Users\Krzysztof\source\repos\Zegar\Zegar\obj\Release\Ustawienia.baml
+C:\Users\Krzysztof\source\repos\Zegar\Zegar\obj\Release\Zegar.g.resources
+C:\Users\Krzysztof\source\repos\Zegar\Zegar\obj\Release\Zegar.Properties.Resources.resources
+C:\Users\Krzysztof\source\repos\Zegar\Zegar\obj\Release\Zegar.csproj.GenerateResource.cache
+C:\Users\Krzysztof\source\repos\Zegar\Zegar\obj\Release\Zegar.csproj.CoreCompileInputs.cache
+C:\Users\Krzysztof\source\repos\Zegar\Zegar\obj\Release\Zegar.exe
+C:\Users\Krzysztof\source\repos\Zegar\Zegar\obj\Release\Zegar.pdb
