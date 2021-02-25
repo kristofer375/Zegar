@@ -41,7 +41,7 @@ namespace Zegar {
     public partial class MainWindow : System.Windows.Window, System.Windows.Markup.IComponentConnector {
         
         
-        #line 10 "..\..\MainWindow.xaml"
+        #line 14 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Label Zegar;
         
@@ -49,7 +49,7 @@ namespace Zegar {
         #line hidden
         
         
-        #line 11 "..\..\MainWindow.xaml"
+        #line 15 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Label team1;
         
@@ -57,7 +57,7 @@ namespace Zegar {
         #line hidden
         
         
-        #line 12 "..\..\MainWindow.xaml"
+        #line 16 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Label team2;
         
@@ -65,7 +65,7 @@ namespace Zegar {
         #line hidden
         
         
-        #line 13 "..\..\MainWindow.xaml"
+        #line 17 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Label wynik;
         
@@ -104,7 +104,7 @@ namespace Zegar {
             {
             case 1:
             
-            #line 8 "..\..\MainWindow.xaml"
+            #line 12 "..\..\MainWindow.xaml"
             ((Zegar.MainWindow)(target)).Closed += new System.EventHandler(this.Window_Closed);
             
             #line default
