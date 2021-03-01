@@ -5,12 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Zegar"
         mc:Ignorable="d"
-        Title="Zegar" Height="96" Width="466" Closed="Window_Closed" ResizeMode="NoResize" Visibility="Visible" IsHitTestVisible="False">
-    <Grid Width="450" Height="60" HorizontalAlignment="Center" VerticalAlignment="Center">
-        <Label x:Name="Zegar" Content="00:00" HorizontalAlignment="Left" Margin="0" VerticalAlignment="Top" Width="120" Height="60" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial" FontWeight="Bold" FontSize="36"/>
-        <Label x:Name="team1" Content="GSP" HorizontalAlignment="Left" Margin="120,0,0,0" VerticalAlignment="Top" Height="60" Width="110" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="36"/>
-        <Label x:Name="team2" Content="GŚĆ" HorizontalAlignment="Left" Margin="340,0,0,0" VerticalAlignment="Top" Height="60" Width="110" FontSize="36" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
-        <Label x:Name="wynik" Content="0 - 0" HorizontalAlignment="Left" Margin="230,0,0,0" VerticalAlignment="Top" Height="60" Width="110" FontSize="30" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        Title="Zegar" Height="96" Width="466" Closed="Window_Closed" Visibility="Visible" IsHitTestVisible="False" MinWidth="466" MinHeight="96" MaxHeight="96" MaxWidth="604">
+    <Grid Margin="0,0,0,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="120" MaxWidth="120" MinWidth="120"/>
+            <ColumnDefinition MinWidth="110" MaxWidth="178"/>
+            <ColumnDefinition Width="110" MinWidth="110" MaxWidth="178"/>
+            <ColumnDefinition MinWidth="110"/>
+        </Grid.ColumnDefinitions>
+        <Label Grid.Column="0" x:Name="Zegar" Content="00:00" HorizontalAlignment="Left" Margin="0" VerticalAlignment="Top" Width="120" Height="60" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial" FontWeight="Bold" FontSize="36" Background="Black" Foreground="White"/>
+        <Label Grid.Column="1" x:Name="team1" Content="GSP" Margin="0" VerticalContentAlignment="Center" FontSize="36" MinWidth="110" MinHeight="60" MaxHeight="60" HorizontalContentAlignment="Center" Height="60" VerticalAlignment="Top"/>
+        <Label Grid.Column="3" x:Name="team2" Content="GŚĆ" Margin="0" VerticalContentAlignment="Center" FontSize="36" MinWidth="110" MinHeight="60" MaxHeight="60" HorizontalContentAlignment="Center" Height="60" VerticalAlignment="Top"/>
+        <Label Grid.Column="2" x:Name="wynik" Content="0 - 0" FontSize="30" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" MinWidth="110" MinHeight="60" MaxWidth="110" MaxHeight="60" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Background="Red" Foreground="White" FontWeight="Bold" FontFamily="Arial"/>
 
     </Grid>
 </Window>

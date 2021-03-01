@@ -94,15 +94,48 @@ namespace Zegar
 
         private void potwierdź_Click(object sender, RoutedEventArgs e)
         {
-            ((MainWindow)Application.Current.MainWindow).team1.Content = team1.Text.Substring(0, 3).ToUpper();
-            ((MainWindow)Application.Current.MainWindow).team2.Content = team2.Text.Substring(0, 3).ToUpper();
+            try
+            {
+                ((MainWindow)Application.Current.MainWindow).team1.Content = team1.Text.Substring(0, 5).ToUpper();
+            }
+            catch
+            {
+                try
+                {
+                    ((MainWindow)Application.Current.MainWindow).team1.Content = team1.Text.Substring(0, 3).ToUpper();
+                }
+                catch
+                {
+                    MessageBox.Show("Wymagane są przynajmniej 3 symbole!");
+                    ((MainWindow)Application.Current.MainWindow).team1.Content = "GSP";
+                }
+            }
+            try
+            {
+                ((MainWindow)Application.Current.MainWindow).team2.Content = team2.Text.Substring(0, 5).ToUpper();
+            }
+            catch
+            {
+                try
+                {
+                    ((MainWindow)Application.Current.MainWindow).team2.Content = team2.Text.Substring(0, 3).ToUpper();
+                }
+                catch
+                {
+                    MessageBox.Show("Wymagane są przynajmniej 3 symbole!");
+                    ((MainWindow)Application.Current.MainWindow).team2.Content = "GŚĆ";
+                }
+            }
         }
 
         private void score1Zmniejsz_Click(object sender, RoutedEventArgs e)
         {
-            p1--;
-            score1.Text = p1.ToString();
-            ((MainWindow)Application.Current.MainWindow).wynik.Content = p1.ToString() + " - " + p2.ToString();
+            if(p1 != 0)
+            {
+                p1--;
+                score1.Text = p1.ToString();
+                ((MainWindow)Application.Current.MainWindow).wynik.Content = p1.ToString() + " - " + p2.ToString();
+            }
         }
 
         private void score1Zwieksz_Click(object sender, RoutedEventArgs e)
@@ -114,9 +147,12 @@ namespace Zegar
 
         private void score2Zmniejsz_Click(object sender, RoutedEventArgs e)
         {
-            p2--;
-            score2.Text = p2.ToString();
-            ((MainWindow)Application.Current.MainWindow).wynik.Content = p1.ToString() + " - " + p2.ToString();
+            if (p2 != 0)
+            {
+                p2--;
+                score1.Text = p1.ToString();
+                ((MainWindow)Application.Current.MainWindow).wynik.Content = p1.ToString() + " - " + p2.ToString();
+            }
         }
 
         private void score2Zwieksz_Click(object sender, RoutedEventArgs e)
